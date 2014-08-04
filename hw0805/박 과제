@@ -1,0 +1,20 @@
+public class Birthday{
+int year;
+int month;
+int date;
+
+//year
+
+//month
+
+//date
+4,6,9,11 : 30 days
+2: 28 or 29days
+else 31 days
+	
+}
+
+
+static void main(String args[]){
+	sysout("년을 입력하세요");
+}

@@ -1,0 +1,274 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*body {
+	line-height: 1;
+	min-width: 1275px;
+}
+*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a,a:active, a:hover, a:focus{
+	text-decoration: none;
+	color:#000;
+}
+/*기본설정 없애는 것 넣*/
+
+header{
+	background-color: #FFFFFF;
+	width:100%;
+	height: 50px;
+	
+}
+
+.wrap{
+	width: 100%;
+}
+
+/*googleplay로고만 작게하려면...?? html에서 그냥 고정시킴*/
+body{
+	background-color: #E5E5E5; 
+}
+
+header .menu{
+	margin: 10px 10px 5px 10px;
+	float:left;
+}
+
+header .logo{
+	margin: 0 auto;
+	width:200px;
+	padding-top: 10px;
+}
+
+header .glass{
+	margin-top: -40px;
+	float:right;
+}
+
+.middle{
+	width:100%;
+	background-color: #E5E5E5;
+	height:1000px;
+	/*border: 2px solid blue;*/
+}
+
+.navbutton{
+	margin: 15px auto;
+	width:471px;
+}
+
+.navbutton button{
+	background-color:#FFFFFF;
+	color:#5F5F5F;
+	width:150px;
+	height: 35px;
+	border: none;
+
+	/*padding: 5px 50px 5px 50px;*/
+	/*margin-right: 10px;*/
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.upper{
+	float:left;
+	width:90%;
+	height:100px;
+	/*border: 2px solid blue;*/
+}
+
+.description{
+	float:left;
+	width: 240px;
+	/*height:100px;*/
+	padding-top: 15px;
+	margin-top: 15px;
+	margin-left: 10px;
+	line-height: 1.7em;
+	/*border: 2px solid blue;*/
+}
+
+h1{
+	font-weight: bold;
+	font-size: 23px;
+	width:314px;
+}
+
+h2{
+	font-size: 14px;
+	width:240px;
+}
+
+.more{
+	background-color: #1AA1E1;
+	color:white;
+	float:right;
+	padding: 5px 10px 0px 10px;
+	margin-right: 10px;
+	margin-top: 50px;
+	font-size: 16px;
+	border: none;
+	/*border: 2px solid blue;*/
+}
+
+.listofbooks{
+	float:left;
+	height:305px;
+	width:100%;
+	overflow:hidden;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	/*border: 2px solid green;*/
+
+}
+
+li.books{
+	width:165px;
+	height:305px;
+	margin: 5px 5px 5px 0px;
+	/*border: 2px solid red;*/
+	display:inline-block;
+	float:left;
+	background-color: white;
+}
+
+.books img{
+	width:165px;
+	height:230px;
+	float:left;
+}
+
+.books .bookname{
+	width:150px;
+	margin-left:5px;
+	overflow: hidden;
+	margin-top: 5px;
+	color: #444444;
+	font-size: 15px;
+	display: block;
+	float: left;
+	white-space: nowrap;
+	font-family: arial;
+}
+
+.books .author a{
+	display:block;
+	margin-left: 5px;
+	float:left;	
+	color:#ACACAC;
+	font-size: 12px;
+	}
+
+.books .price a{
+	display:block;	
+	float:right;
+	color:#1AA1E1;
+	font-size: 12px;
+	margin-top: 25px;
+	margin-right: 5px;
+}
+
+.graymore{
+	clear: both;
+	background-color: white;
+	color: #808080;
+	padding: 5px 10px 5px 10px;
+	/*margin-top: 50px;*/
+	font-size: 16px;
+	border: none;
+	width:80px;
+	margin: 0 auto;
+	display:block;
+	
+	/*border: 2px solid blue;*/
+}
+
+footer{
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 13px;
+}
+
+footer{
+	color:#777777;
+	display: inline;
+}
+
+#bottom ul li{
+	display:inline;
+}
+
+@media screen and (max-width:480px) {
+	.navbutton{
+		width:320px;
+	}
+
+		/*.wrap{
+	width: 100%;
+	}
+
+	header{
+	width:100%;
+	height:50px;
+	background-color: #FFFFFF;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.header img{
+		margin: 5px 10px 5px 10px;
+	} 
+	
+	.books{
+		width:45%;
+	}*/
+
+
+
+}
